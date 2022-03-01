@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button toCalculator;
     private Button toLayout;
+    private Button toActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +22,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         toCalculator = findViewById(R.id.toCalculator);
         toLayout = findViewById(R.id.toLayout);
+        toActivity = findViewById(R.id.toActivity);
         toCalculator.setOnClickListener(this);
         toLayout.setOnClickListener(this);
+        toActivity.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.toLayout:
                 toLay(view);
                 break;
+            case R.id.toActivity:
+                toAc(view);
             default:
                 break;
         }
@@ -48,6 +53,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toLay(View v){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, LayoutActivity.class); // From Main -> Calculator
+        MainActivity.this.startActivity(intent);
+    }
+
+    private void toAc(View v){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, AcActivity.class); // From Main -> Activity
         MainActivity.this.startActivity(intent);
     }
 

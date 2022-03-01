@@ -37,4 +37,14 @@
             android:text="Calculator"
             android:padding="20dp"
             />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/toActivity"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#FF23"
+            android:layout_margin="10dp"
+            android:text="Activity"
+            android:padding="20dp"
+            />
 </LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bdbdbd"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#bdbdbd"
+        android:layout_marginTop="100dp"
+        >
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Age: "
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/Age_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/plain_text_input3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Please Enter Your Name Here"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="#fff"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF23"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Say my Name"
+        android:padding="20dp"
+        />
+</LinearLayout>
