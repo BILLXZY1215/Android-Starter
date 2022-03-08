@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button toCalculator;
     private Button toLayout;
     private Button toActivity;
+    private Button toThread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toCalculator = findViewById(R.id.toCalculator);
         toLayout = findViewById(R.id.toLayout);
         toActivity = findViewById(R.id.toActivity);
+        toThread = findViewById(R.id.toThread);
         toCalculator.setOnClickListener(this);
         toLayout.setOnClickListener(this);
         toActivity.setOnClickListener(this);
+        toThread.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.toActivity:
                 toAc(view);
+            case R.id.toThread:
+                toThread(view);
             default:
                 break;
         }
@@ -59,6 +64,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toAc(View v){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, AcActivity.class); // From Main -> Activity
+        MainActivity.this.startActivity(intent);
+    }
+
+    private void toThread(View v){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, ThreadActivity.class); // From Main -> Activity
         MainActivity.this.startActivity(intent);
     }
 

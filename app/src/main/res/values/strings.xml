@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="img_url">https://s1.ax1x.com/2022/03/08/bcWeXD.png</string>
+    <string name="download_url">https://www.cs.nott.ac.uk/~pszmdf/g53mdp/index.html</string>
 </resources>
