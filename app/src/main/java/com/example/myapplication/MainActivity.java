@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button toActivity;
     private Button toThread;
     private Button toService;
+    private Button toDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toActivity = findViewById(R.id.toActivity);
         toThread = findViewById(R.id.toThread);
         toService = findViewById(R.id.toService);
+        toDB = findViewById(R.id.toDB);
         toCalculator.setOnClickListener(this);
         toLayout.setOnClickListener(this);
         toActivity.setOnClickListener(this);
         toThread.setOnClickListener(this);
         toService.setOnClickListener(this);
+        toDB.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 toThread(view);
             case R.id.toService:
                 toService(view);
+            case R.id.toDB:
+                toDB(view);
             default:
                 break;
         }
@@ -81,6 +86,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toService(View v){
         Intent intent = new Intent();
         intent.setClass(MainActivity.this, ServiceActivity.class); // From Main -> Activity
+        MainActivity.this.startActivity(intent);
+    }
+
+    private void toDB(View v){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, DBActivity.class); // From Main -> Activity
         MainActivity.this.startActivity(intent);
     }
 

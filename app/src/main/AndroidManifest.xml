@@ -42,5 +42,8 @@
         <activity android:name=".ServiceActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".DBActivity"
+            android:exported="true">
+        </activity>
     </application>
 </manifest>

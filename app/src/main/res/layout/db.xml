@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bdbdbd"
+    >
+    <EditText
+        android:id="@+id/fruitName"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Fruit Name"
+        android:layout_gravity="center"
+        android:background="#fff"
+        />
+    <EditText
+        android:id="@+id/fruitColor"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Fruit Color"
+        android:layout_gravity="center"
+        android:background="#fff"
+        />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/updateDB"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FF23"
+        android:layout_margin="10dp"
+        android:text="Update Database"
+        android:padding="20dp"
+        />
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/readDB"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FF23"
+        android:layout_margin="10dp"
+        android:text="Read Database"
+        android:padding="20dp"
+        />
+    <EditText
+        android:id="@+id/displayFruit"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Display Fruit"
+        android:editable="false"
+        android:layout_gravity="center"
+        android:background="#fff"
+        />
+    <ListView
+        android:id="@+id/dbListView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="#aaa"
+        android:divider="@android:color/holo_red_dark"
+        android:dividerHeight="3dp"
+        />
+</LinearLayout>
