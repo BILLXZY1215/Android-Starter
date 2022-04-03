@@ -48,12 +48,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.toActivity:
                 toAc(view);
+                break;
             case R.id.toThread:
                 toThread(view);
+                break;
             case R.id.toService:
                 toService(view);
+                break;
             case R.id.toDB:
                 toDB(view);
+                break;
             default:
                 break;
         }
